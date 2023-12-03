@@ -53,14 +53,6 @@ class FetchNewsService implements FetchNewsServiceInterface{
      *
      *  @urlParam news required unrefined fetched news.
      *  @urlParam sourcename required Source name of news.
-     * @response {
-     *       "id" : 1,
-     *       "title" : "UK house prices rise for third month",
-     *       "content": "Boudewijn Driedonks, partner at McKinsey &amp; Company, sees a ‘ray
-     *              of hope’ in today’s UK manufacturing PMI report, even though it shows...",
-     *       "category_id" : 2,
-     *       "images" : {},
-     * }
      * */
 
     public function transform(array $news, string $sourceName): mixed

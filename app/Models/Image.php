@@ -8,22 +8,12 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 /**
  * @group Models
- *
- * This model represents an Image with an associated News.
  */
 class Image extends Model
 {
     use HasFactory;
 
     /**
-     * Fillable attributes for mass assignment.
-     *
-     * @fillable [
-     *     "url",
-     *     "news_id",
-     *     "active"
-     * ]
-     *
      * @var array
      */
     protected $fillable = [

@@ -7,15 +7,11 @@ use App\Models\News;
 
 /**
  * @group Repositories
- *
- * This class implements News repository methods.
  */
 class NewsRepository implements NewsRepositoryInterface
 {
     /**
      * Get a news article by its URL.
-     *
-     * @urlParam url string required The URL of the news article.
      * @response 200 {
      *    "id": 123,
      *    "title": "News Title",

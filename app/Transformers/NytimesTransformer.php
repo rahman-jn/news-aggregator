@@ -36,8 +36,6 @@ class NytimesTransformer implements TransformerInterface
     }
 
     /**
-     * Transform the provided news data and populate the class properties.
-     *
      * @param array            $newsItem         The array containing data of the news item.
      * @param CategoryService  $categoryService  Instance of CategoryService for category-related operations.
      *
@@ -68,8 +66,6 @@ class NytimesTransformer implements TransformerInterface
     }
 
     /**
-     * Get the transformed news data as an associative array.
-     *
      * @return array The transformed news data.
      */
     public function getTransformedNews(): array
@@ -86,8 +82,6 @@ class NytimesTransformer implements TransformerInterface
     }
 
     /**
-     * Get an array of authors from the provided byline array.
-     *
      * @param array $byline The array containing author data.
      *
      * @return array The array of authors.

@@ -9,21 +9,11 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
     /**
      * @group Models
-     *
-     * This model represents a relationship between News and Author.
      */
 class NewsAuthor extends Model
 {
     use HasFactory;
     /**
-     * Fillable attributes for mass assignment.
-     *
-     * @fillable [
-     *     "news_id",
-     *     "author_id",
-     *     "active"
-     * ]
-     *
      * @var array
      */
     protected $fillable = [

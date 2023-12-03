@@ -16,24 +16,12 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 /**
  * @group Models
  *
- * This model represents a News article with associated Source, Category, Images, and NewsAuthors.
  */
 class News extends Model
 {
     use HasFactory;
 
     /**
-     * Fillable attributes for mass assignment.
-     *
-     * @fillable [
-     *     "title",
-     *     "content",
-     *     "url",
-     *     "category_id",
-     *     "source_id",
-     *     "active",
-     *     "published_at"
-     * ]
      *
      * @var array
      */

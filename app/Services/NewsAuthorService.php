@@ -16,8 +16,6 @@ use Illuminate\Support\Facades\Log;
 class NewsAuthorService implements NewsAuthorServiceInterface
 {
     /**
-     * Creates a news author and associates them with a news article.
-     *
      * @param array $authorName An associative array containing the author's name and optional email.
      * @param int   $newsId     The ID of the news article to associate the author with.
      *

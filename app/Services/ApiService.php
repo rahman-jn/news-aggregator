@@ -21,19 +21,6 @@ class ApiService implements ApiServiceInterface
     public int $itemsCount = 10;
 
     /**
-     * Search for news articles based on the provided request.
-     *
-     * @response 200 {
-     *    "id": 123,
-     *    "title": "News Title",
-     *    "content": "News Content",
-     *    "url": "News URL",
-     *    "category_id": "News Category",
-     *    "published_at": "2023-01-01 12:00:00",
-     *    "images": ["Image URL 1", "Image URL 2"],
-     *    "authors": ["Author 1", "Author 2"]
-     * }
-     *
      * @param Request $request The request containing search parameters.
      *
      * @return array The array of news articles matching the search criteria.
@@ -81,8 +68,6 @@ class ApiService implements ApiServiceInterface
 
     }
     /**
-     * Apply filters to the news query based on the request.
-     *
      * @param Builder $query The news query builder.
      * @param Request $request The request containing filter parameters.
      *
@@ -106,8 +91,6 @@ class ApiService implements ApiServiceInterface
     }
 
     /**
-     * Apply search queries to the news query based on the request.
-     *
      * @param Builder $query The news query builder.
      * @param Request $request The request containing search parameters.
      *
@@ -125,7 +108,6 @@ class ApiService implements ApiServiceInterface
     }
 
     /**
-     * Apply user preferences to the news query based on the request.
      *
      * @param Builder $query The news query builder.
      * @param Request $request The request containing user preference parameters.

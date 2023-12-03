@@ -15,21 +15,12 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 
 /**
  * @group Models
- *
- * This model represents a Category with associated News.
  */
 class Category extends Model
 {
     use HasFactory;
 
     /**
-     * Fillable attributes for mass assignment.
-     *
-     * @fillable [
-     *     "name",
-     *     "active"
-     * ]
-     *
      * @var array
      */
     protected $fillable = [

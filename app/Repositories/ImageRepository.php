@@ -7,16 +7,11 @@ use App\Models\Image;
 
 /**
  * @group Repositories
- *
- * This class implements Image repository methods.
  */
 class ImageRepository implements ImageRepositoryInterface
 {
     /**
      * Store an image for a news article.
-     *
-     * @urlParam image string required The URL of the image.
-     * @urlParam newsId int required The ID of the news article.
      * @response 200 {
      *    "url": "Stored Image URL",
      *    "news_id": 123,

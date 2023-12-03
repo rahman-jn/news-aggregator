@@ -14,24 +14,11 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 
 /**
  * @group Models
- *
- * This model represents an Author with associated NewsAuthors.
  */
 class Author extends Model
 {
     use HasFactory;
 
-    /**
-     * Fillable attributes for mass assignment.
-     *
-     * @fillable [
-     *     "name",
-     *     "email",
-     *     "active"
-     * ]
-     *
-     * @var array
-     */
     protected $fillable = [
         'name',
         'email',

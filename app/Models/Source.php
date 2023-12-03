@@ -14,22 +14,12 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 
 /**
  * @group Models
- *
- * This model represents a Source with associated News.
  */
 class Source extends Model
 {
     use HasFactory;
 
     /**
-     * Fillable attributes for mass assignment.
-     *
-     * @fillable [
-     *     "name",
-     *     "address",
-     *     "active"
-     * ]
-     *
      * @var array
      */
     protected $fillable = [

@@ -28,8 +28,6 @@ class NewsApiTransformer implements TransformerInterface
     private string $published_at;
 
     /**
-     * NewsApiTransformer constructor.
-     *
      * @param array            $newsItem         The array containing data of the news item.
      * @param CategoryService  $categoryService  Instance of CategoryService for category-related operations.
      */
@@ -41,8 +39,6 @@ class NewsApiTransformer implements TransformerInterface
     }
 
     /**
-     * Transform the provided news data and populate the class properties.
-     *
      * @param array            $newsItem         The array containing data of the news item.
      * @param CategoryService  $categoryService  Instance of CategoryService for category-related operations.
      *
@@ -86,8 +82,6 @@ class NewsApiTransformer implements TransformerInterface
     }
 
     /**
-     * Get an array of authors from the provided byline array.
-     *
      * @param array $byline The array containing author data.
      *
      * @return array The array of authors.

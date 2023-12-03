@@ -19,9 +19,6 @@ class NewsController extends Controller
 {
     /**
      * Fetches news data from sources Api and store them in database.
-     *
-     * @urlParam source_id integer required The ID of the news source.
-     *
      * @response {
      *     "success": true,
      *     "message": "News fetched and stored successfully."
@@ -55,15 +52,7 @@ class NewsController extends Controller
 
     /**
      * @group News EndPoint Api
-     *
-     * Search on news.
-     *
      * Searches for news based on the provided search parameters.
-     *
-     * @queryParam q string The keyword to search for news.
-     * @queryParam category string The category to filter news by.
-     * @queryParam from_date date The starting date for news search (YYYY-MM-DD).
-     * @queryParam to_date date The ending date for news search (YYYY-MM-DD).
      *
      * @param Request $request
      * @param ApiServiceInterface $apiService

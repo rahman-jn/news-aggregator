@@ -15,8 +15,6 @@ use Mockery\Exception;
 class CategoryService implements CategoryServiceInterface
 {
     /**
-     * Get the category ID based on the category name.
-     *
      * @urlParam categoryName string required The name of the category.
      * @response 200 {
      *    "category_id": 1
@@ -32,7 +30,7 @@ class CategoryService implements CategoryServiceInterface
     }
 
     /**
-     * Transform a category name to a standardized format.
+     * Transform a category names to existed categories name.
      *
      * @urlParam category string required The original name of the category.
      * @response 200 {

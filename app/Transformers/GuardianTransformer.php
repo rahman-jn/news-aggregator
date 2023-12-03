@@ -42,8 +42,6 @@ class GuardianTransformer implements TransformerInterface
     }
 
     /**
-     * Transform the provided news data and populate the class properties.
-     *
      * @param array            $newsItem         The array containing data of the news item.
      * @param CategoryService  $categoryService  Instance of CategoryService for category-related operations.
      *
