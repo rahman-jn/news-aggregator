@@ -32,6 +32,7 @@ class NewsController extends Controller
     {
         try {
             $sources = Source::whereActive(1)->get();
+
             foreach ($sources as $source) {
                 //Each source returns data on its own format.
                 $rawNews = $fetchNewsService->rawNews($source);
